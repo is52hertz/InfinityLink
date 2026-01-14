@@ -99,7 +99,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>3rd/libcef/libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd/libcef/libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(OutDir)../../InfLink.dll.pdb</ProgramDatabaseFile>
       <OutputFile>$(OutDir)/../../$(TargetName)$(TargetExt)</OutputFile>
     </Link>
@@ -128,7 +128,7 @@
       <EnableUAC>false</EnableUAC>
       <ProgramDatabaseFile>$(OutDir)../../InfLink.dll.pdb</ProgramDatabaseFile>
       <OutputFile>$(OutDir)/../../$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalDependencies>3rd/libcef/libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd/libcef/libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -146,7 +146,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <OutputFile>$(OutDir)/../../../$(TargetName)$(TargetExt).x64.dll</OutputFile>
-      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef_x64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
@@ -169,7 +169,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <OutputFile>$(OutDir)/../../../$(TargetName)$(TargetExt).x64.dll</OutputFile>
-      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef_x64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
