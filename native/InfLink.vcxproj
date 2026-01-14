@@ -139,14 +139,15 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>J:\Projects\BetterNCM\src\3rd\libcef\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rd\libcef\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <OutputFile>$(OutDir)/../../../$(TargetName)$(TargetExt).x64.dll</OutputFile>
-      <AdditionalDependencies>J:\Projects\BetterNCM\src\3rd\libcef\libcef_x64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,7 +160,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>J:\Projects\BetterNCM\src\3rd\libcef\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rd\libcef\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -168,7 +169,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <OutputFile>$(OutDir)/../../../$(TargetName)$(TargetExt).x64.dll</OutputFile>
-      <AdditionalDependencies>J:\Projects\BetterNCM\src\3rd\libcef\libcef_x64.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)3rd\libcef\libcef.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

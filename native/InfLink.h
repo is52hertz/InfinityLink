@@ -11,7 +11,7 @@
 #endif 
 
 #define NATIVE_PLUGIN_CPP_EXTENSIONS
-#include "J:\Projects\BetterNCM\src\BetterNCMNativePlugin.h"
+#include "BetterNCMNativePlugin.h"
 
 extern "C"
 {
